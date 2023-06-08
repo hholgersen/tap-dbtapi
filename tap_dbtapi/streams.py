@@ -186,7 +186,7 @@ class RunsStream(dbtAPIStream):
     ) -> Dict[str, Any]:
 
         return {
-            "order_by": "updated_at",
+            "order_by": "finished_at",
             "limit": self.page_size,
             "offset": next_page_token,
         }
